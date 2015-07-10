@@ -19,6 +19,10 @@
 		font-size: 36px 
 		color: #FFFFFF 
 		text-align: center
+	.clock
+		margin: 0 auto
+		width: 655px  
+		margin-top: 10px 
 .form
 	margin: 0 auto
 	background: #023464  
@@ -28,6 +32,8 @@
 	border: 2px solid #1996CD 
 	padding: 35px 50px 40px 50px 
 	text-align: center
+	+r(810)
+		width: auto
 	h3
 		font-size: 36px 
 		font-weight: normal
@@ -38,6 +44,11 @@
 		float: left
 		width: 315px 
 		text-align: left
+		+clr
+		+r(810)
+			float: none !important
+			margin: 0 auto
+			margin-bottom: 30px 
 	.form__col+.form__col
 		float: right
 		input[type="text"]
@@ -61,6 +72,24 @@
 		clear: both
 		padding: 10px 0
 		text-align: center
+		position: relative
+		.form__checknote
+			display: none
+			border: 2px solid #043562 
+
+			position: absolute
+			padding: 20px 
+			bottom: 40px  
+			left: 0
+			right: 0  
+			background: rgba(#fff,1)
+			-webkit-border-radius: 10px 
+			border-radius: 10px 
+			line-height: 1.2 
+			box-shadow: 0 0 10px #000
+		&:hover
+			.form__checknote
+				display: block
 		input
 			vertical-align: middle
 			margin-right: 10px 
@@ -79,6 +108,14 @@
 		color: #fff 
 		font-size: 36px 
 		+reg
+		+r(500)
+			width: auto
+			display: block
+			text-align: center
+			font-size: 20px 
+			height: 40px 
+			line-height: 40px
+			width: 100%  
 	.field__wrap
 		position: relative
 		&.field__wrap1
@@ -214,6 +251,18 @@
 		cursor: pointer
 		overflow: hidden
 		position: absolute
+		&:before
+			content: ' '
+			position: absolute
+			top: 50%
+			left: 50%
+			margin-left: -35px   
+			margin-top: -35px
+			+s(zoom)
+			opacity: 0
+			transition: all .2s linear
+			z-index: 20 
+		 
 		+r(1280)
 			position: relative
 			width: 50% !important
@@ -225,6 +274,8 @@
 			
 			float: left
 		&:hover
+			&:before
+				opacity: 1 
 			div
 				transform: scale(1.1)
 		div
@@ -359,6 +410,27 @@
 	left: 0
 	right: 0
 	top: 0   
+	.btn
+		font-size: 20px 
+		cursor: pointer
+		height: 50px 
+		line-height: 50px
+		width: 315px 
+		text-align: center
+		color: #fff 
+		position: absolute
+		left: 50%
+		margin-left: -156px  
+		top: 26px - 5px
+		background: #1A96CD 
+		transition: all .2s linear
+		opacity: 0 
+		display: block
+		&.is-active
+			opacity: 1
+			top: 26px 
+		+r(800)
+			display: none !important
 	.header__in
 		max-width: 1100px 
 		margin: 0 auto
@@ -515,3 +587,24 @@
 			display: block
 			width: auto
 			font-size: 20px 
+.popup
+	position: fixed
+	z-index: 3000 
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+	overflow: auto   
+	&.popup_form
+		display: none
+	.overlay
+		position: absolute
+		top: 0
+		bottom: 0
+		right: 0
+		left: 0 
+		background: rgba(#000,.8)    
+	.form
+		margin-top: 150px 
+		position: relative
+		z-index: 20 
