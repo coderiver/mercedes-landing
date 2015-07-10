@@ -9,7 +9,120 @@
 		p
 			font-size: 18px 
 .dl
-	background: #1D2733 
+	background: #1D2733 url(../img/dl.jpg) no-repeat 0 0
+	-webkit-background-size: cover 
+	-o-background-size: cover 
+	background-size: cover 
+	padding: 90px 0 63px 0
+	h2
+		font-weight: normal
+		font-size: 36px 
+		color: #FFFFFF 
+		text-align: center
+.form
+	margin: 0 auto
+	background: #023464  
+	width: 800px - 100px
+	-webkit-border-radius: 15px 
+	border-radius: 15px 
+	border: 2px solid #1996CD 
+	padding: 35px 50px 40px 50px 
+	text-align: center
+	h3
+		font-size: 36px 
+		font-weight: normal
+		color: #fff 
+		text-align: center
+		margin-bottom: 25px 
+	.form__col
+		float: left
+		width: 315px 
+		text-align: left
+	.form__col+.form__col
+		float: right
+		input[type="text"]
+			margin-bottom: 7px 
+	h4,.field__label
+		margin-bottom: 10px 
+		font-size: 24px 
+		font-weight: normal
+		color: #1A96CE 
+	input[type="text"]
+		display: block
+		width: 100%
+		+box
+		color: #6A6A6A
+		font-size: 24px   
+		padding: 0 10px 
+		height: 40px 
+		line-height: normal 
+		+reg
+	.form__check
+		clear: both
+		padding: 10px 0
+		text-align: center
+		input
+			vertical-align: middle
+			margin-right: 10px 
+		a
+			text-decoration: underline
+			color: #fff 
+			font-size: 18px 
+			vertical-align: middle
+	.form__submit
+		height: 70px
+		line-height: 70px
+		text-align: center
+		width: 430px
+		text-align: center
+		background: #1996CD    
+		color: #fff 
+		font-size: 36px 
+		+reg
+	.field__wrap
+		position: relative
+		&.field__wrap1
+			width: 190px 
+			float: left
+		&.field__wrap2
+			width: 115px
+			float: left 
+			color: #fff 
+			margin-left: 10px 
+			font-size: 0 
+			input
+				width: 50px 
+				display: inline-block
+				font-size: 18px 
+			span
+				width: 10px 
+				display: inline-block
+				font-size: 18px 
+				text-align: center
+		.field__smalllabel
+			position: absolute
+			bottom: -26px 
+			color: #fff 
+			font-size: 18px 
+			color: #FFFFFF 
+			text-transform: lowercase
+.select
+	position: relative
+	margin-bottom: 18px 
+	select
+		position: absolute
+		-webkit-appearance: none
+		height: 100%
+		width: 100%
+		opacity: 0
+		z-index: 20
+		top: 0  
+	.select__icon
+		position: absolute
+		top: 50%
+		margin-top: -3px  
+		right: 10px 
+		+s(arr)
 .new
 	position: relative
 	padding: 50px 0 
@@ -53,17 +166,39 @@
 		+r(800)
 			font-size: 24px 
 .gallery
-	padding: 124px 
+	padding-top: 124px 
 	padding-bottom: 152px 
 	background: #222B3D url(../img/gallery.jpg) no-repeat 0 0
+	+r(1280)
+		padding-bottom: 50px 
+		padding-top: 50px 
 	.gallery__in
-		max-width: 1280px  
+		width: 1280px  
 		margin: 0 auto
-	.gallery__text
+		height: 1117px 
+		position: relative
+		+clr
+		+r(1280)
+			width: auto 
+			margin: 0 10px 
+			height: auto 
+	.gallery__text 
 		background: #fff 
 		padding: 80px 70px
 		font-size: 20px 
 		color: #182432 
+		position: absolute
+		+box
+		width: 540px 
+		height: 590px 
+		left: 194px 
+		+r(1280)
+			position: static
+			width: auto
+			float: left
+			padding-bottom: 30px 
+			padding-top: 30px 
+			height: auto 
 		h2
 			font-size: 36px 
 			color: #043464 
@@ -78,6 +213,17 @@
 		min-height: 200px 
 		cursor: pointer
 		overflow: hidden
+		position: absolute
+		+r(1280)
+			position: relative
+			width: 50% !important
+			top: auto !important
+			left: auto  !important
+			bottom: auto   !important
+			right: auto  !important
+			height: 200px !important
+			
+			float: left
 		&:hover
 			div
 				transform: scale(1.1)
@@ -92,7 +238,28 @@
 			background-repeat: no-repeat  
 			-webkit-background-size: cover 
 			-o-background-size: cover 
-			background-size: cover     
+			background-size: cover  
+			
+	.pic1   
+		bottom: 0
+		left: 0
+		height: 530px  
+		width: 736px 
+	.pic2   
+		width: 268px 
+		height: 340px 
+		left: 734px 
+		top: 0 
+	.pic3   
+		height: 481px
+		bottom: 300px 
+		right: 0
+		width: 546px  
+	.pic4
+		bottom: 0
+		right: 0
+		width: 546px      
+		height: 300px 
 .separator
 	position: absolute
 	left: 50%
