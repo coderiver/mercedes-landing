@@ -1,9 +1,14 @@
 // Normally mainpage styles
 .titul
 	position: relative
+	.section__image
+		+r(600)
+			padding-top: 20px !important
 	.section__text
 		padding-bottom: 10px !important
 		padding-top: 80px !important 
+		+r(600)
+			padding-top: 0px !important
 		h2
 			font-size: 30px 
 		p
@@ -14,15 +19,22 @@
 	-o-background-size: cover 
 	background-size: cover 
 	padding: 90px 0 63px 0
+	+r(700)
+		padding-top: 20px 
+		padding-bottom: 30px 
 	h2
 		font-weight: normal
 		font-size: 36px 
 		color: #FFFFFF 
 		text-align: center
+		+r(700)
+			font-size: 24px 
 	.clock
 		margin: 0 auto
 		width: 655px  
 		margin-top: 10px 
+		+r(700)
+			width: 300px 
 .form
 	margin: 0 auto
 	background: #023464  
@@ -34,23 +46,27 @@
 	text-align: center
 	+r(810)
 		width: auto
+		padding-left: 10px 
+		padding-right: 10px 
 	h3
-		font-size: 36px 
+		font-size: 24px 
 		font-weight: normal
 		color: #fff 
 		text-align: center
 		margin-bottom: 25px 
 	.form__col
-		float: left
-		width: 315px 
+		// float: left
+		// width: 315px 
 		text-align: left
+		max-width: 420px 
+		margin: 0 auto 
 		+clr
 		+r(810)
 			float: none !important
 			margin: 0 auto
 			margin-bottom: 30px 
-	.form__col+.form__col
-		float: right
+			width: auto
+	.form__col
 		input[type="text"]
 			margin-bottom: 7px 
 	h4,.field__label
@@ -76,7 +92,6 @@
 		.form__checknote
 			display: none
 			border: 2px solid #043562 
-
 			position: absolute
 			padding: 20px 
 			bottom: 40px  
@@ -87,7 +102,7 @@
 			border-radius: 10px 
 			line-height: 1.2 
 			box-shadow: 0 0 10px #000
-		&:hover
+		&.is-visible
 			.form__checknote
 				display: block
 		input
@@ -102,7 +117,7 @@
 		height: 70px
 		line-height: 70px
 		text-align: center
-		width: 430px
+		width: 100%
 		text-align: center
 		background: #1996CD    
 		color: #fff 
@@ -128,7 +143,7 @@
 			margin-left: 10px 
 			font-size: 0 
 			input
-				width: 50px 
+				width: 52px 
 				display: inline-block
 				font-size: 18px 
 			span
@@ -236,15 +251,22 @@
 			padding-bottom: 30px 
 			padding-top: 30px 
 			height: auto 
+		+r(700)
+			padding: 20px 20px 
 		h2
 			font-size: 36px 
 			color: #043464 
 			font-weight: normal
 			margin-bottom: 20px 
+			+r(700)
+				font-size: 24px 
+				line-height: 1.2 
 		p
 			margin-bottom: 20px 
 			font-size: 20px 
 			color: #182432 
+			+r(700)
+				font-size: 15px 
 	.gallery__pic
 		position: relative
 		min-height: 200px 
@@ -370,6 +392,7 @@
 		padding-bottom: 120px 
 		font-size: 13px 
 		color: #182432 
+		
 		+r(820)
 			width: auto 
 			float: none
@@ -391,7 +414,13 @@
 			font-weight: normal 
 			margin-bottom: -3px 
 
-
+.why
+	.section__text
+		font-size: 18px 
+		h3
+			line-height: 1.1
+			margin-bottom: 5px  
+		
 
 
 %btn
@@ -439,17 +468,23 @@
 		+r(1140)
 			margin: 0 20px 
 	.header__phone
-		height: 100px 
-		line-height: 100px
+		line-height: 1.2
 		font-size: 24px  
 		color: #fff 
 		font-weight: bold
 		text-align: right
 		position: absolute
 		right: 0 
-		top: 0  
+		top: 25px
+		span
+			display: block
+			font-size: 18px  
+			font-weight: normal
+			+r(600)
+				font-size: 12px 
 		+r(600)
 			font-size: 16px 
+			top: 35px 
 	.logo
 		position: absolute
 		left: 0
@@ -505,7 +540,7 @@
 				margin: 0
 				font-size: 33px 
 				text-align: center 
-				text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff,1px -1px 0 #fff ,-1px 1px 0 #fff 
+				// text-shadow: 1px 1px 0 #fff,-1px -1px 0 #fff,1px -1px 0 #fff ,-1px 1px 0 #fff 
 			
 		.btn
 			@extend %btn
@@ -514,6 +549,9 @@
 				display: block
 				width: auto
 				margin-top: 15px 
+				font-size: 20px 
+				padding-left: 10px 
+				padding-right: 10px 
 
 .map
 	background: #151E2D 
@@ -608,3 +646,28 @@
 		margin-top: 150px 
 		position: relative
 		z-index: 20 
+		+r(700)
+			margin-top: 0 
+.flip-clock-wrapper ul
+	+r(700)
+		width: 20px !important 
+		height: 33px !important 
+		font-size: 50px !important
+		line-height: 31px !important  
+.flip-clock-wrapper ul li a div div.inn
+	+r(700)
+		font-size: 20px !important 
+.flip-clock-wrapper ul li
+	+r(700)
+		line-height: 31px !important
+.clock
+	margin-bottom: 40px  !important
+	+clr
+	+r(700)
+		margin-bottom: 40px !important
+.flip-clock-divider
+	+r(700)
+		height: 42px !important
+.flip-clock-divider .flip-clock-label
+	+r(700)
+		right: -45px  !important

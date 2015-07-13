@@ -63,6 +63,10 @@ $(".js-goto").click(function() {
     return false;
 });
 $( ".datepicker" ).datepicker();
+$('.form__check a').click(function(event) {
+	$(this).parent().parent().toggleClass('is-visible');
+	return false;
+});
 	// $(document).on("click", function(){
 	// 	$(".js-popup").hide();
 	// });
