@@ -35,14 +35,18 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 @media only screen and (max-width: 600px) { .titul .section__image { padding-top: 20px !important; } }
 .titul .section__text { padding-bottom: 10px !important; padding-top: 80px !important; }
 @media only screen and (max-width: 600px) { .titul .section__text { padding-top: 0px !important; } }
+.s .titul .section__text { padding-bottom: 30px !important; }
+@media only screen and (max-width: 600px) { .s .titul .section__text { padding-bottom: 10px !important; } }
 .titul .section__text h2 { font-size: 30px; }
 .titul .section__text p { font-size: 18px; }
 
-.dl { background: #1d2733 url(../img/dl.jpg) no-repeat 0 0; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; padding: 90px 0 63px 0; }
+.dl { background: #1d2733 url(../img/dl.jpg) no-repeat 50% 0; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; padding: 90px 0 63px 0; }
+.s .dl { background-image: url(../img/dl1.jpg); }
 @media only screen and (max-width: 700px) { .dl { padding-top: 20px; padding-bottom: 30px; } }
 .dl h2 { font-weight: normal; font-size: 36px; color: white; text-align: center; }
+.s .dl h2 { margin: 0 5%; }
 @media only screen and (max-width: 700px) { .dl h2 { font-size: 24px; } }
-.dl .clock { margin: 0 auto; width: 655px; margin-top: 10px; }
+.dl .clock { margin: 0 auto; width: 623px; margin-top: 10px; }
 @media only screen and (max-width: 700px) { .dl .clock { width: 300px; } }
 
 .form { margin: 0 auto; background: #023464; width: 700px; -webkit-border-radius: 15px; border-radius: 15px; border: 2px solid #1996cd; padding: 35px 50px 40px 50px; text-align: center; }
@@ -83,7 +87,8 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 .new h2 { font-size: 36px; font-weight: normal; color: #043464; margin-bottom: 40px; text-align: center; }
 @media only screen and (max-width: 800px) { .new h2 { font-size: 24px; } }
 
-.gallery { padding-top: 124px; padding-bottom: 152px; background: #222b3d url(../img/gallery.jpg) no-repeat 0 0; }
+.gallery { padding-top: 124px; padding-bottom: 152px; background: #222b3d url(../img/gallery.jpg) no-repeat 50% 0; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; }
+.s .gallery { background-image: url(../img/gallery1.jpg); }
 @media only screen and (max-width: 1280px) { .gallery { padding-bottom: 50px; padding-top: 50px; } }
 .gallery .gallery__in { width: 1280px; margin: 0 auto; height: 1117px; position: relative; *zoom: 1; }
 .gallery .gallery__in:after { content: " "; display: table; clear: both; }
@@ -92,6 +97,7 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 @media only screen and (max-width: 1280px) { .gallery .gallery__text { position: static; width: auto; float: left; padding-bottom: 30px; padding-top: 30px; height: auto; } }
 @media only screen and (max-width: 700px) { .gallery .gallery__text { padding: 20px 20px; } }
 .gallery .gallery__text h2 { font-size: 36px; color: #043464; font-weight: normal; margin-bottom: 20px; }
+.s .gallery .gallery__text h2 { line-height: 1.1; margin-bottom: 35px; }
 @media only screen and (max-width: 700px) { .gallery .gallery__text h2 { font-size: 24px; line-height: 1.2; } }
 .gallery .gallery__text p { margin-bottom: 20px; font-size: 20px; color: #182432; }
 @media only screen and (max-width: 700px) { .gallery .gallery__text p { font-size: 15px; } }
@@ -146,7 +152,8 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 @media only screen and (max-width: 600px) { .header .header__phone { font-size: 16px; top: 35px; } }
 .header .logo { position: absolute; left: 0; top: 30px; background: url('../img/icons-s311ecfcec2.png') 0 0 no-repeat; width: 158px; height: 40px; }
 
-.topper { height: 700px; background: url(../img/top.jpg) no-repeat 50% 0; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; }
+.topper { height: 700px; background: url(../img/top.jpg) no-repeat 60% 0; -webkit-background-size: cover; -o-background-size: cover; background-size: cover; }
+.s .topper { background-image: url(../img/top1.jpg); background-position: 55% 0; }
 @media only screen and (max-width: 600px) { .topper { height: auto; padding-bottom: 100px; } }
 .topper .topper__in { max-width: 1100px; margin: 0 auto; height: 700px; position: relative; }
 @media only screen and (max-width: 1140px) { .topper .topper__in { margin: 0 20px; } }
@@ -156,6 +163,7 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 .topper .topper__text strong { font-size: 117px; color: white; font-weight: normal; line-height: 1; font-family: "serser", serif; display: block; }
 @media only screen and (max-width: 600px) { .topper .topper__text strong { font-size: 80px; } }
 .topper .topper__text span { display: block; text-align: right; margin-right: 40px; margin-bottom: 50px; text-transform: uppercase; line-height: 1.25; }
+.s .topper .topper__text span { text-align: left; margin-right: 0; }
 @media only screen and (max-width: 600px) { .topper .topper__text span { margin: 0; font-size: 33px; text-align: center; } }
 .topper .topper__text .btn { width: 437px; }
 @media only screen and (max-width: 600px) { .topper .topper__text .btn { display: block; width: auto; margin-top: 15px; font-size: 20px; padding-left: 10px; padding-right: 10px; } }
