@@ -216,6 +216,7 @@
 			margin: 0 25px
 		img
 			display: block
+			
 			max-width: 100% 
 
 	h2
@@ -226,6 +227,79 @@
 		text-align: center
 		+r(800)
 			font-size: 24px 
+.car
+	position: relative 
+	font-size: 14px
+	color: #0595d0 
+	li
+		margin-bottom: 10px
+	a	
+		color: #0595d0  
+		font-size: 24px
+		text-decoration: none
+		border-bottom: 2px solid 
+		+r(1100)
+			font-size: 18px
+			border-width: 1px
+		&:hover
+			border-color: transparent 
+	p
+		text-align: right
+	&__info
+		position: absolute
+		
+		+r(1100)
+			display: none
+		
+		img
+			position: absolute
+	&__info-1
+		top: 145px
+		left: 0
+		width: 215px
+		img
+			left: 50%
+			top: 116%
+	&__info-2
+		top: 78px
+		left: 205px
+		img
+			left: -16px
+			top: 160%
+	&__info-3
+		top: 10px
+		left: 385px
+		img
+			left: 0
+			top: 160%
+	&__info-4
+		top: 78px
+		left: 720px
+		img
+			left: -45px
+			top: 160%
+	&__info-5
+		top: 145px
+		right: 70px
+		width: 150px
+		img
+			left: -60px
+			top: 130%
+	&__img
+		img
+			display: block
+			width: 100%
+			margin: 0 auto 
+	&__list
+		position: absolute
+		display: none
+		left: 0
+		top: 0
+		max-width: 400px
+		+r(1100)
+			display: block
+		+r(767)
+			position: static
 .gallery
 	padding-top: 124px 
 	padding-bottom: 152px 
