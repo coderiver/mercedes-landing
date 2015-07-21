@@ -171,6 +171,7 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 .header .header__phone { line-height: 1.2; font-size: 24px; color: #fff; font-weight: bold; text-align: right; position: absolute; right: 0; top: 25px; }
 .header .header__phone span { display: block; font-size: 18px; font-weight: normal; }
 @media only screen and (max-width: 600px) { .header .header__phone span { font-size: 12px; } }
+.header .header__phone a { color: #fff; text-decoration: none; }
 @media only screen and (max-width: 600px) { .header .header__phone { font-size: 16px; top: 35px; } }
 .header .logo { position: absolute; left: 0; top: 30px; background: url('../img/icons-se53ae59ed8.png') 0 -50px no-repeat; width: 158px; height: 40px; }
 
