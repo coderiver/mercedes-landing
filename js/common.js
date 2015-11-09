@@ -91,7 +91,6 @@ $('.js-header-slider').slick({
 	arrows: true,
 	focusOnSelect: true,
 	centerPadding: '0',
-	asNavFor: '.js-slider',
 	responsive: [
 		{
 			breakpoint: 1025,
@@ -106,11 +105,6 @@ $('.js-header-slider').slick({
 			}
 		}
 	]
-});
-
-$('.js-slider').slick({
-	arrows: false,
-	asNavFor: '.js-header-slider'
 });
 
 });
