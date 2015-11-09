@@ -83,4 +83,34 @@ $('.form__check a').click(function(event) {
 	// });
 
 	// console.log($('body').html());
+
+$('.js-header-slider').slick({
+	slidesToShow: 3,
+	slidesToScroll: 1,
+	centerMode: true,
+	arrows: true,
+	focusOnSelect: true,
+	centerPadding: '0',
+	asNavFor: '.js-slider',
+	responsive: [
+		{
+			breakpoint: 1025,
+			settings: {
+				slidesToShow: 1
+			}
+		},
+		{			
+			breakpoint: 769,
+			settings: {
+				slidesToShow: 3
+			}
+		}
+	]
+});
+
+$('.js-slider').slick({
+	arrows: false,
+	asNavFor: '.js-header-slider'
+});
+
 });

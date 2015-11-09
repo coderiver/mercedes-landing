@@ -773,3 +773,258 @@
 .flip-clock-divider .flip-clock-label
 	+r(700)
 		right: -45px  !important
+
+//Page class
+.header
+	&_white
+		background: #fff
+		height: 150px 
+		+r(768)
+			height: 160px
+		.header
+			&__in
+				height: 100%
+				+r(768)
+					margin: 0 10px 
+		.logo
+			&_dark
+				+s(logo-dark)
+				top: 50%
+				margin-top: -20px
+				+r(768)
+					top: auto
+					margin: 0
+					bottom: 25px
+					background: url(../img/icons/logo-dark.png) no-repeat center center
+					-webkit-background-size: contain
+					-o-background-size: contain
+					background-size: contain
+					width: 120px 
+	&-slider
+		max-width: 550px
+		margin: 0 auto
+		padding: 10px 59px 
+		overflow: hidden
+		+r(1024)
+			max-width: 250px
+		+r(768)
+			max-width: 310px
+			padding: 0 35px 
+	&-slide
+		padding: 0 7px 
+		position: relative
+		+vertical
+		cursor: pointer
+		+r(1024)
+			padding: 0
+		img
+			width: 100%
+			display: inline-block
+			vertical-align: middle
+			opacity: 0.6
+			+scale(0.9)
+			transition: opacity 0.2s, transform 0.1s
+		span
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 5px
+			text-align: center
+			color: #8d8d8d
+			font-size: 14px
+			+ser
+			transition: color 0.2s
+			white-space: nowrap
+			overflow: hidden
+			-ms-text-overflow: ellipsis
+			text-overflow: ellipsis
+			+r(768)
+				bottom: 0
+		&.slick-center
+			img
+				opacity: 1
+				+scale(1)
+			span
+				color: #000 
+	.slick-prev, .slick-next
+		top: 50%
+		margin-top: -15px
+		&:before
+			display: none
+	.slick-prev
+		left: 0
+		+arr(25, 29, #0595d0, l)
+	.slick-next
+		right: 0
+		+arr(25, 29, #0595d0, r)
+	&-phone
+		position: absolute
+		bottom: 22px
+		right: 0
+		text-align: right
+		+r(768)
+			bottom: 5px
+		a, span
+			display: block
+			line-height: 1
+		a
+			color: #0595d0
+			font-size: 14px
+			text-decoration: none
+			margin-bottom: 3px
+			+r(500)
+				display: none
+			&:hover
+				text-decoration: underline
+		span
+			font-weight: bold
+			font-size: 24px
+			color: #000
+			margin-bottom: 20px
+			+r(768)
+				font-size: 18px
+				margin-bottom: 10px 
+.button
+	font-size: 14px
+	color: #fff
+	line-height: 1
+	background-color: #0595d0
+	padding: 11px 20px 10px 
+	display: inline-block
+	vertical-align: top
+	+r(768)
+		padding: 8px 10px 7px
+		font-size: 12px 
+
+.slider
+	padding: 150px 0 0
+	+r(768)
+		padding: 160px 0 0 
+	.slide
+		width: 100%
+		height: 550px
+		+cover
+		position: relative
+		&__inner
+			position: absolute
+			bottom: 0
+			left: 0
+			right: 0
+			padding: 24px 0 73px 
+			background: rgba(#013c6a, 0.6)
+			text-align: center
+			+r(768)
+				padding: 30px 0 
+		&__text
+			max-width: 1100px
+			margin: 0 auto
+			padding: 0 0 15px 
+			+clr
+			strong, span
+				float: left
+				width: 50%
+				+r(1024)
+					width: 100%
+					float: none
+					display: block
+					+box
+			strong
+				text-align: right
+				text-shadow: 1px 1.7px 2px rgba(23, 23, 22, 0.25)
+				color: white
+				font-size: 118px
+				+ser
+				line-height: 1
+				font-weight: normal
+				padding: 0 60px 0 0 
+				+r(1024)
+					text-align: center
+					max-width: 100%
+					padding: 10px 20px
+					font-size: 70px
+			span
+				text-align: left
+				color: white
+				font-size: 40px
+				text-transform: uppercase
+				max-width: 335px
+				padding: 10px 0 12px 65px 
+				line-height: 1.2
+				position: relative
+				+r(1024)
+					text-align: center
+					max-width: 100%
+					padding: 10px 20px
+					font-size: 22px
+				&:before
+					content: "" 
+					position: absolute
+					top: 20px
+					left: 0
+					border-left: 1px solid #fff
+					height: 75px 
+		&-btn
+			color: white
+			font-size: 30px
+			line-height: 1
+			background: #0595d0
+			display: inline-block
+			vertical-align: top
+			padding: 20px 40px 
+			margin: 0 20px 
+			+r(1024)
+				padding: 10px 20px
+				font-size: 20px 
+
+.mouse
+	&_mod
+		&:before
+			+s(mouse-dark)
+
+.section
+	&_mod
+		.section
+			&__text
+				h2
+					font-size: 36px
+					color: #036
+					max-width: 360px
+				p
+					font-size: 24px
+					color: #182433
+
+.download-pdf
+	color: white
+	font-size: 24px
+	line-height: 1
+	background-color: #0595d0
+	padding: 23px 23px 23px 80px
+	position: relative
+	text-decoration: none
+	display: inline-block
+	vertical-align: top
+	+r(1024)
+		font-size: 20px
+	+r(500)
+		padding: 20px 15px 15px 70px 
+	i
+		position: absolute
+		top: 16px
+		left: 14px
+		+s(pdf)
+		+r(1024)
+			top: 14px
+
+.gallery
+	&_mod
+		background: #151e2d 
+
+.footer
+	&_mod
+		padding-bottom: 150px
+		+r(768)
+			padding-bottom: 50px
+	.btn
+		span
+			text-transform: uppercase
+			display: block
