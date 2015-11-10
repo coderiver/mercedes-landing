@@ -275,7 +275,7 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 
 @media only screen and (max-width: 700px) { .flip-clock-divider .flip-clock-label { right: -45px !important; } }
 
-.header_white { background: white; height: 150px; }
+.header_white { background: white; height: 150px; overflow: hidden; }
 @media only screen and (max-width: 768px) { .header_white { height: 160px; } }
 .header_white .header__in { height: 100%; }
 @media only screen and (max-width: 768px) { .header_white .header__in { margin: 0 10px; } }
@@ -330,7 +330,7 @@ body { font-family: "regreg", sans-serif; font-size: 12px; line-height: 1.4; }
 .section_mod .section__text h2 { font-size: 36px; color: #003366; max-width: 360px; }
 .section_mod .section__text p { font-size: 24px; color: #182433; }
 
-.download-pdf { color: white; font-size: 24px; line-height: 1; background-color: #0595d0; padding: 23px 23px 23px 80px; position: relative; text-decoration: none; display: inline-block; vertical-align: top; }
+.download-pdf { color: white; font-size: 24px; line-height: 1; background-color: #0595d0; padding: 23px 23px 23px 80px; position: relative; text-decoration: none; display: inline-block; vertical-align: top; margin-bottom: 105px; }
 @media only screen and (max-width: 1024px) { .download-pdf { font-size: 20px; } }
 @media only screen and (max-width: 500px) { .download-pdf { padding: 20px 15px 15px 70px; } }
 .download-pdf i { position: absolute; top: 16px; left: 14px; background: url('../img/icons-s3da91097ed.png') 0 -382px no-repeat; width: 44px; height: 44px; }
