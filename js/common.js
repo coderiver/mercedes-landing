@@ -107,4 +107,47 @@ $('.js-header-slider').slick({
 	]
 });
 
+// form
+(function () {
+	var body = $('body'),
+		popup = $('.js-popupform'),
+		notify = $('.js-notify');
+	// welcome
+	$.validate({
+		form : '#form',
+		onSuccess: function() {
+			post_data = {
+				'name': $('#form input[name=name]').val(),
+				'surname': $('#form input[name=surname]').val(),
+				'midname': $('#form input[name=midname]').val(),
+				'info': $('#form input[name=info]').val(),
+				'email': $('#form input[name=email]').val()
+			};
+			//Ajax post data to server
+			$.post('send.php', post_data, function(response){
+				if (response.type == 'error') {}
+				else {
+					//reset values in all input fields
+					body.removeClass('no-scroll');
+					popup.fadeOut();
+					$('#form').get(0).reset();
+					notify.fadeIn();
+					setTimeout(function () {
+						notify.fadeOut();
+					}, 2000);
+				}
+			}, 'json');
+			// localstorage
+			if (typeof(Storage) !== 'undefined') {
+				// Store
+				localStorage.setItem('validate', 'yes');
+			} else {
+				// Sorry! No Web Storage support..
+			}
+			return false;
+		}
+	});
+}());
+
+
 });
